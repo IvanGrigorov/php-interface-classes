@@ -93,7 +93,7 @@ function convertInterfaceToClass(phpinterface: string) {
 
 function replaceTextAndShow(text: string, phpinterface: string, phpclass: string) {
 	let classText = text.replace('interface ' + phpinterface, 'final class ' + phpclass);
-	classText = classText.replace(/\) *;/gm, ') {' + 
+	classText = classText.replace(/(.*function.* *)(;)/gm, '$1 {' + 
 `
 		// throw new Exception("Not implemented;");
 	}
