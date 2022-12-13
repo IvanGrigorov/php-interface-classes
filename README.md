@@ -1,7 +1,9 @@
 # php-namespace-sanitizer README
 
 Generate PHP class (IClass convention) from interface ```Generate Class (I convention)``` command. -> removes "I"
+
 Generate PHP class (ClassInterface convention) from interface ```Generate Class (Interface convention)``` command. -> removes "Interface"
+
 Generate PHP class (IClass convention) from interface ```Generate Class``` command. ->does not cahnge the name
 
 
